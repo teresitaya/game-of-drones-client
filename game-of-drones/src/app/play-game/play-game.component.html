@@ -1,0 +1,42 @@
+<div class="container-fluid forms-container">
+  <div class="row">
+      <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 forms">
+          <form [formGroup]="playForm" (ngSubmit)="onSubmit()">
+            <h2 class="text-center">{{ 'play_game.ROUND' | translate }} {{round.roundNumber}} </h2>
+            <h4 class="text-center player-label" [ngClass]="currentPlayerClass">{{currentPlayer | uppercase}}</h4>
+
+            <div class="form-group has-error text-center"> <!-- Select Move -->
+              <label for="moves" class="select-move-lavel">{{ 'play_game.MOVE' | translate}}</label>
+              <select formControlName="moves" id="moves">
+                <option *ngFor="let move of moves; let i = index" [value]="moves[i].move">
+                  {{moves[i].move}}
+                </option>
+              </select>
+              <p *ngIf="invalidSelectMove()" id="moves_error" class="help-block">{{ 'play_game.SELECT' | translate }}</p>
+            </div>
+
+            <div class="form-group has-error text-center"> <!-- Ok Button -->
+              <button type="submit" class="btn btn-block btns">{{ 'play_game.OK_BTN' | translate }}</button>
+            </div>
+            <div class="clearfix"></div>
+
+          </form>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 pull-right" *ngIf="showRoundResult" >
+          <label class="play-score">{{ 'play_game.SCORE' | translate }}</label>
+          <div class="table-responsive">
+          <table class="table score-table">
+            <thead>
+              <th>{{ 'play_game.ROUND' | translate }}</th>
+            <th>{{ 'play_game.WINNER' | translate }}</th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let round of rounds">
+                <td>{{round.roundnumber}}</td>
+                <td>{{round.winnername | uppercase}}</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+  </div>

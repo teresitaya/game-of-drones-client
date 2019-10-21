@@ -1,0 +1,16 @@
+
+<div class="container-fluid forms-container game-winner">
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3  col-sm-6 col-sm-offset-3 col-xs-12 winner-form">
+            <h1 class="text-center">{{ 'game_winner.TITLE' | translate | uppercase }} !!! </h1>
+            <h2 class="text-center">  {{winner | uppercase}} {{ 'game_winner.NEW' | translate  }} {{ 'game_winner.EMPEROR' | translate  }}</h2>
+            <div class="form-group has-error text-center"> <!-- Start Button -->
+              <a class="btn btn-block btns" (click)="newMatch()">{{ 'game_winner.PLAY_AGAIN' | translate }}</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+      </div>
+      </div>
+
+
+

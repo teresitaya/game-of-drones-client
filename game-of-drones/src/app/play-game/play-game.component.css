@@ -1,0 +1,21 @@
+.select-move-lavel {
+  margin-right: 1vh;
+}
+.player-label {
+  padding: 20px;
+  font-size: 30px;
+}
+.play-score {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.score-table {
+  font-size: 18px;
+}
+.tie-round {
+  color: green;
+}
+
+
+
+

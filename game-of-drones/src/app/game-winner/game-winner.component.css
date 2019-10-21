@@ -1,0 +1,10 @@
+.game-winner {
+  background: url('../../assets/images/fireworks.jpg') no-repeat;
+  background-size: initial;
+  background-position-y: top;
+  background-position-x: center;
+  color: #313132;
+}
+.winner-form {
+  margin-top: 30vh;
+}

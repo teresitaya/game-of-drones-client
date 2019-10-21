@@ -1,0 +1,44 @@
+body {
+  background: url('assets/images/images-blank.png') no-repeat;
+  background-size: initial;
+  background-position-y: bottom;
+  background-position-x: center;
+  color: grey;
+}
+label {
+  color: darkslategrey;
+}
+.player-1-label {
+  color:#d81b1b;
+}
+
+.player-2-label {
+  color:#50609f;
+}
+.forms-container {
+  margin: 26vh auto;
+}
+.forms {
+  border: 1px solid #f26651;
+  padding: 1vh;
+}
+.btns {
+  background-color: #f26651;
+  color: white;
+  margin: 3vh auto;
+  border:1px solid #f26651;
+}
+.btns:hover {
+  background-color:white;
+  color: #f26651;
+}
+.btns:active {
+  background-color: #f26651;
+  color: white;
+  margin: 3vh auto;
+  border:1px solid #f26651;
+}
+
+h2 {
+  font-size: 34px;
+}
