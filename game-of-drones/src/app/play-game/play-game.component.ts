@@ -34,7 +34,6 @@ export class PlayGameComponent implements OnInit {
   public rules: any;
   public showRoundResult: boolean;
   public rounds: any;
-  // public winnerPlayerClass: any;
   public matchRounds: any;
 
   constructor(private translate: TranslateService, private route: ActivatedRoute, private router: Router, private formBuilder: FormBuilder,
@@ -134,7 +133,6 @@ export class PlayGameComponent implements OnInit {
             this.rounds.push(data.round);
             this.matchRounds.push(data.round);
             this.round.movesCount = 0;
-         //   this.winnerPlayerClass = 'tie-round';
             this.submitted = false;
             this.ngOnInit();
           });
@@ -154,7 +152,6 @@ export class PlayGameComponent implements OnInit {
             this.rounds.push(data.round);
             this.matchRounds.push(data.round);
             this.round.movesCount = 0;
-           // this.winnerPlayerClass = data.round.winnername === this.players[0].player ? 'player-1-label' : 'player-2-label';
             this.submitted = false;
             this.ngOnInit();
           });

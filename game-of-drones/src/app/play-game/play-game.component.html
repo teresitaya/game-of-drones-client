@@ -31,7 +31,7 @@
             <th>{{ 'play_game.WINNER' | translate }}</th>
             </thead>
             <tbody>
-              <tr *ngFor="let round of rounds">
+              <tr *ngFor="let round of rounds" class="winner-player-class">
                 <td>{{round.roundnumber}}</td>
                 <td>{{round.winnername | uppercase}}</td>
               </tr>

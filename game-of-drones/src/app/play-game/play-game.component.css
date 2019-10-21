@@ -12,10 +12,8 @@
 .score-table {
   font-size: 18px;
 }
-.tie-round {
-  color: green;
+.winner-player-class {
+  color:#63bdba;
 }
-
-
 
 
